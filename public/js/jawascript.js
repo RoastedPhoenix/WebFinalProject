@@ -19,17 +19,6 @@ var a_speed = 2.5;
 var peanut_butter = 1;
 var score = 0;
 $('#score').html(score);
-var egg = new Egg();
-egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
-    jQuery('#egggif').fadeIn(500, function() {
-        window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
-    });
-}, "konami-code");
-egg.addHook(function(){
-    score = Infinity;
-    $('#score').html(score);
-});
-egg.listen();
 function Virus(xi, yi)
 {
     this.x = xi;
@@ -622,3 +611,15 @@ d = new White_Cell_a(-1000, -1000, wvxa, wvya);
 e = new White_Cell_b(-1000, -1000, wvxb, wvyb);
 draw();
 
+
+var egg = new Egg();
+egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+    jQuery('#egggif').fadeIn(500, function() {
+        window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+    });
+}, "konami-code");
+egg.addHook(function(){
+    score = Infinity;
+    $('#score').html(score);
+});
+egg.listen();
