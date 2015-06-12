@@ -239,8 +239,8 @@ function White_Cell_a(xi, yi, wvxm, wvym)
                 }
                 rand1 = Math.random();
                 rand2 = Math.random();
-                xrand = Math.random() * 50;
-                yrand = Math.random() * 50;
+                xrand = Math.random() * 100;
+                yrand = Math.random() * 100;
                 wvxa *= 1.075;
                 wvya *= 1.075;
                 if(rand1 < 0.5)
@@ -356,8 +356,8 @@ function White_Cell_b(xi, yi, wvxm, wvym)
                 }
                 rand1 = Math.random();
                 rand2 = Math.random();
-                xrand = Math.random() * 50;
-                yrand = Math.random() * 50;
+                xrand = Math.random() * 100;
+                yrand = Math.random() * 100;
                 wvxb *= 1.075;
                 wvyb *= 1.075;
                 if(rand1 < 0.5)
