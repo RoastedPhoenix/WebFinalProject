@@ -1,7 +1,7 @@
 /**
  * Created by josh on 5/27/15.
  */
-var gamenotover = true
+var gamenotover = true;
 var xvm = 2.5;
 var yvm = 2.5;
 var randminusx = 0;
