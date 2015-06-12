@@ -239,11 +239,11 @@ function White_Cell_a(xi, yi, wvxm, wvym)
                 }
                 rand1 = Math.random();
                 rand2 = Math.random();
-                xrand = Math.random() * 10;
-                yrand = Math.random() * 10;
+                xrand = Math.random() * 50;
+                yrand = Math.random() * 50;
                 wvxa *= 1.075;
                 wvya *= 1.075;
-                if(rand1 > 0.5)
+                if(rand1 < 0.5)
                 {
                     if (rand2 > 0.5)
                     {
@@ -257,7 +257,7 @@ function White_Cell_a(xi, yi, wvxm, wvym)
                         d.move();
                     }
                 }
-                else if(rand2 > 0.5)
+                else if(rand2 < 0.5)
                 {
                     d = new White_Cell_a(700 - xrand, 300 + yrand, wvxa, wvya);
                     d.move();
@@ -356,11 +356,11 @@ function White_Cell_b(xi, yi, wvxm, wvym)
                 }
                 rand1 = Math.random();
                 rand2 = Math.random();
-                xrand = Math.random() * 10;
-                yrand = Math.random() * 10;
+                xrand = Math.random() * 50;
+                yrand = Math.random() * 50;
                 wvxb *= 1.075;
                 wvyb *= 1.075;
-                if(rand1 > 0.5)
+                if(rand1 < 0.5)
                 {
                     if (rand2 > 0.5)
                     {
@@ -374,7 +374,7 @@ function White_Cell_b(xi, yi, wvxm, wvym)
                         e.move();
                     }
                 }
-                else if(rand2 > 0.5)
+                else if(rand2 < 0.5)
                 {
                     e = new White_Cell_b(700 - xrand, 300 + yrand, wvxb, wvyb);
                     e.move();
