@@ -6,5 +6,21 @@ button
     position: relative;
     top:50%;
     left:50%;
+    color: orangered;
 }
 
+span
+{
+    color: cyan;
+    font-size: xx-large;
+}
+
+div
+{
+    color: cyan;
+}
+
+h2
+{
+    color: cyan;
+}
