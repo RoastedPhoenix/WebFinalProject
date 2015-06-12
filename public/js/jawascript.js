@@ -243,9 +243,9 @@ function White_Cell_a(xi, yi, wvxm, wvym)
                 yrand = Math.random() * 100;
                 wvxa *= 1.075;
                 wvya *= 1.075;
-                if(rand1 < 0.5)
+                if(rand1 > 0.5)
                 {
-                    if (rand2 > 0.5)
+                    if (rand2 < 0.5)
                     {
                         d = new White_Cell_a(700 + xrand, 300 + yrand, wvxa, wvya);
                         d.move();
@@ -360,9 +360,9 @@ function White_Cell_b(xi, yi, wvxm, wvym)
                 yrand = Math.random() * 100;
                 wvxb *= 1.075;
                 wvyb *= 1.075;
-                if(rand1 < 0.5)
+                if(rand1 > 0.5)
                 {
-                    if (rand2 > 0.5)
+                    if (rand2 < 0.5)
                     {
                         e = new White_Cell_b(700 + xrand, 300 + yrand, wvxb, wvyb);
                         e.move();
