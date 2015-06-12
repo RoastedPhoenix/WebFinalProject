@@ -611,3 +611,8 @@ d = new White_Cell_a(-1000, -1000, wvxa, wvya);
 e = new White_Cell_b(-1000, -1000, wvxb, wvyb);
 draw();
 
+var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
+    jQuery('#egggif').fadeIn(500, function() {
+        window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+    });
+}).listen();
